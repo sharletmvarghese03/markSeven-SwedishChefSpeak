@@ -8,3 +8,16 @@ var serverURL = `https://api.funtranslations.com/translate/chef.json`;
 function getTranslationURL(input) {
 	return serverURL + `?` + `text` + input;
 }
+
+function clickHandler() {
+	var inputText = txtInput.ariaValueMax;
+
+	fetch(getTranslationURL(inputText))
+		.then((response) => response.json())
+		.then((json) => {
+			var translatedText = json.contents.translated;
+			outputDiv.innerText = translatedText;
+		});
+}
+
+btnTranslate.addEventListener('click', clickHandler);

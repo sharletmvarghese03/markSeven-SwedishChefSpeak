@@ -25,6 +25,28 @@ body {
 	text-align: center;
 }
 
+/** header **/
+.hero {
+	padding-top: 3rem;
+}
+
+.hero .hero-img {
+	max-height: 400px;
+	max-width: 500px;
+	display: block;
+	margin: auto;
+}
+
+.hero .hero-heading {
+	text-align: center;
+	padding-top: 1rem;
+	color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+	color: var(--primary-color);
+}
+
 /** container **/
 
 .container {

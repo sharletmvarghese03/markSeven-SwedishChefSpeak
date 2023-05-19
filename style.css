@@ -11,3 +11,16 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/** nav **/
+
+.navigation {
+	background-color: var(--primary-color);
+	padding: 2rem 1rem;
+}
+
+.nav-brand {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+}
